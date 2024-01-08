@@ -1,14 +1,14 @@
 import Head from 'next/head';
-
+import Header from './components/header/page';
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center p-24">
+    <div>
       <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <main>
-        Hello World!
         <section>
           {/* Row */}
           {/* Row */}
