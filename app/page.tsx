@@ -1,12 +1,14 @@
-function Home() {
+import Head from 'next/head';
+
+export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <head>
+    <div className="flex min-h-screen flex-col items-center justify-center p-24">
+      <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
-      </head>
+      </Head>
       <main>
-        {/* Banner */}
+        Hello World!
         <section>
           {/* Row */}
           {/* Row */}
@@ -19,7 +21,5 @@ function Home() {
       </main>
       {/* Modal */}
     </div>
-  )
+  );
 }
-
-export default Home;
