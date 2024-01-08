@@ -1,0 +1,6 @@
+-> tailwindcss builds with mobile first approach, meaning : it is mobile responsive first.
+-> uses of next over react --> It gives image optimisation, SEO improvement, typescript support.
+  Best feature is server-side rendering.
+-> Nextjs does not required react router.
+
+
