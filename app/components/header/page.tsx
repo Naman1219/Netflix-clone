@@ -1,8 +1,23 @@
 import Image from "next/image"
 import Link from "next/link";
 import {BellIcon, SearchIcon} from '@heroicons/react/solid';
+import { useEffect, useState } from "react";
 
 export default function Header() {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() =>{
+    const handleScroll = () =>{
+      if(window.scrollY > 0){
+        setIsScrolled(true)
+      }
+      else{
+        setIsScrolled(false)
+      }
+    }
+  }, [])
+
   return ( <header>
     <div className="flex items-center space-x-2 md:space-x-10">
     < Image
