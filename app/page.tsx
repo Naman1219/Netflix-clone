@@ -29,7 +29,7 @@ export default function Home() {
 }
 
 
-export const getServerSideProps = async () => {
+export const getServerProps = async () => {
   const [
     netflixOriginals,
     trendingNow,
