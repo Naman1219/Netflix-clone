@@ -1,6 +1,6 @@
 "use client"
 import { Movie } from "@/typings";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
 import { baseUrl } from "@/constants/movie";
 interface Props{
@@ -17,7 +17,7 @@ function Banner({netflixOriginals}: Props) {
   
   return (
     <div>
-      <div className="absolute top-0 left-0 h-[95vh] w-screen">
+      <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
     <Image
       src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
       alt="banner-image"
