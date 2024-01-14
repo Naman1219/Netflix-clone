@@ -3,6 +3,7 @@ import Banner from './components/banner/page';
 import requests from '@/utils/requests';
 import { Movie } from '@/typings';
 import { NextPage } from 'next';
+import Row from './components/row/page';
 
 interface Props {
   netflixOriginals: Movie[]
@@ -68,13 +69,12 @@ export const getMovies = async () => {
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16">
         <Banner netflixOriginals={netflixOriginals} />
         <section>
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
-          {/* Row */}
+          <Row />
+          <Row />
+          <Row />
+          <Row />
+          <Row />
+          <Row />
         </section>
       </main>
       {/* Modal */}
