@@ -9,7 +9,7 @@ interface Props{
   netflixOriginals : Movie[];
 }
 
-function Banner({netflixOriginals}: Props) {
+export default function Banner({netflixOriginals}: Props) {
 
   const [movie, setMovie] = useState<Movie | null>(null);
 
@@ -42,6 +42,4 @@ function Banner({netflixOriginals}: Props) {
 
     </div>
   )
-}
-
-export default Banner;
+};
