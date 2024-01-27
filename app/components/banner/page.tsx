@@ -1,5 +1,5 @@
 "use client"
-import { Movie } from "@/typings";
+import { Movie } from "../../../typings";
 import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
 import { baseUrl } from "@/constants/movie";
